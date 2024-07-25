@@ -8,6 +8,13 @@
   <body>
     <img src="VaultDoor.jpg" alt="Secret Vault" />
 
+    <form>
+      <input type="text" class="lock1" />
+      <input type="text" class="lock2" />
+      <input type="text" class="lock3" />
+      <input type="submit" value="Unlock" id="unlock" />
+    </form>
+
     <style>
       body {
         background-color: black;
@@ -16,6 +23,47 @@
       img {
         height: 1000px;
         width: fit-content;
+      }
+      input {
+        font-size: 80px;
+      }
+      #unlock {
+        font-family: monospace;
+        font-size: 30px;
+        background-color: silver;
+        height: 50px;
+        width: 200px;
+        z-index: 1;
+        position: absolute;
+        top: 375px;
+        left: 630px;
+      }
+      .lock1 {
+        background-color: whitesmoke;
+        height: 100px;
+        width: 90px;
+        z-index: 1;
+        position: absolute;
+        top: 250px;
+        left: 576px;
+      }
+      .lock2 {
+        background-color: whitesmoke;
+        height: 100px;
+        width: 90px;
+        z-index: 1;
+        position: absolute;
+        top: 250px;
+        left: 683px;
+      }
+      .lock3 {
+        background-color: whitesmoke;
+        height: 100px;
+        width: 90px;
+        z-index: 1;
+        position: absolute;
+        top: 250px;
+        left: 790px;
       }
     </style>
     <script src="vault.js"></script>
